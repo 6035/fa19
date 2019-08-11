@@ -1,10 +1,122 @@
-# 6.035 Computer Language Engineering
+# 6.035 Computer Language Engineering FA19
 
 Any and all information about 6.035 Fall 2019!
 
+There are two websites for 6.035 fa19:
+1. [this page](https://github.com/6035/fa19)
+1. [Piazza][piazza]
+
+If neither site has the information you need, you should [email the TA's directly](#course-staff)
+
+## Table of Contents
+
+1. [6.035 Computer Language Engineering](#6035-computer-language-engineering)
+    1. [Schedule](#schedule)
+    1. [General Administrivia](#general-administrivia)
+        1. [Course Staff](#course-staff)
+        1. [MIT Catalog Description](#mit-catalog-description)
+        1. [Recommended Texts](#recommended-texts)
+        1. [Communication](#communication)
+        1. [Grading and attendance policy](#grading-and-attendance-policy)
+        1. [Late policy](#late-policy)
+        1. [Collaboration](#collaboration)
+        1. [Compiler Building and Running](#compiler-building-and-running)
+        1. [Third-party Libraries](#thirdparty-libraries)
+        1. [Class meetings](#class-meetings)
+        1. [Contact](#contact)
+        1. [Office Hours and Relectures](#office-hours-and-relectures)
+    1. [Reference Materials](#reference-materials)
+        1. [Official References](#official-references)
+            1. [Provided During Exams](#provided-during-exams)
+        1. [Unofficial References](#unofficial-references)
+
 ## Schedule
 
-TODO
+[Official MIT Calendar](https://registrar.mit.edu/calendar)
+
+```txt
+                                            2019
+     September                October                 November                December
+Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7           1  2  3  4  5                    1  2     1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14     6  7  8  9 10 11 12     3  4  5  6  7  8  9     8  9 10 11 12 13 14
+15 16 17 18 19 20 21    13 14 15 16 17 18 19    10 11 12 13 14 15 16    15 16 17 18 19 20 21
+22 23 24 25 26 27 28    20 21 22 23 24 25 26    17 18 19 20 21 22 23    22 23 24 25 26 27 28
+29 30                   27 28 29 30 31          24 25 26 27 28 29 30    29 30 31
+```
+
+|                 | Monday | Tuesday | Wednesday | Thursday | Friday |
+| :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
+| `09/02 - 09/06` | - | - | __FIRST DAY__<br>L1: overview<br>[piazza]<br>course tools<br>project overview | L2: regex/grammar<br>phase-1 release | L3: regex/grammar |
+| `09/09 - 09/13` | L4: parsing | L5: parsing | L6: parsing | L7: parsing | |
+| `09/16 - 09/20` | | | | | Career Fair |
+| `09/23 - 09/27` | | | | | |
+| `09/30 - 10/04` | | | | | | 
+| `10/07 - 10/11` | | | | | |
+| `10/14 - 10/18` | Columbus Day | Columbus Day | | | |
+| `10/21 - 10/25` | | | | | Family Weekend|
+| `10/28 - 11/01` | | | | | |
+| `11/04 - 11/18` | | | | | |
+| `11/11 - 11/15` | | | | | |
+| `11/18 - 11/22` | | | __DROP DATE__ | | |
+| `11/25 - 11/29` | | | | Thanksgiving | Thanksgiving |
+| `12/02 - 12/06` | | | | | |
+| `12/09 - 12/13` | | | __LAST DAY__ | | |
+<!--- rough idea
+|                 | Monday | Tuesday | Wednesday | Thursday | Friday |
+| :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
+| `09/02 - 09/06` | - | - | __FIRST DAY__<br>L1: overview<br>[piazza]<br>course tools<br>project overview | L2: regex/grammar<br>phase-1 release | L3: regex/grammar |
+| `09/09 - 09/13` | L4: parsing | L5: parsing | L6: parsing | L7: parsing | |
+| `09/16 - 09/20` | | | __PHASE 1 DUE__ | __PHASE 2 INFO SESS__ | Career Fair |
+| `09/23 - 09/27` | | | __FINALIZE TEAMS__ | | |
+| `09/30 - 10/04` | | | | | __PHASE 2 DUE__ | 
+| `10/07 - 10/11` | | | | | __QUIZ 1__ |
+| `10/14 - 10/18` | Columbus Day | Columbus Day | | | |
+| `10/21 - 10/25` | | | | | Family Weekend<br>__PHASE 3 DUE__ |
+| `10/28 - 11/01` | | | | | |
+| `11/04 - 11/18` | | | | | __PHASE 4 DUE__ |
+| `11/11 - 11/15` | | | | | |
+| `11/18 - 11/22` | | | __DROP DATE__ | | |
+| `11/25 - 11/29` | | | | Thanksgiving | Thanksgiving |
+| `12/02 - 12/06` | | | __QUIZ 2__ | | |
+| `12/09 - 12/13` | | __PHASE 5 DUE__ | __LAST DAY__<br>__DERBY__ | | |
+--->
+
+<!--- websites --->
+[piazza]: https://piazza.com/mit/fall2019/6035
+
+<!--- project phases --->
+[phase-1]: phase-1/
+
+<!--- handouts --->
+[course tools]: materials/project/01-athena.pdf
+[project overview]: materials/project/01-project-overview.pdf
+
+<!--- miniquizzes --->
+
+<!--- exams and answer keys --->
+<!---__QUIZ 1__<br>[2011][11-e1], [key][11-k1]<br>[2013][13-e1], [key][13-k1]<br>[2014][14-e1], [key][14-k1]<br>[2016][16-e1], [key][16-k1]<br>[2017][17-e1], [key][17-k1]<br>[2018][18-e1], [key][18-k1]--->
+[11-e1]: materials/exam/2011-exam1.pdf
+[11-k1]: materials/exam/2011-exam1-key.pdf
+[13-e1]: materials/exam/2013-exam1.pdf
+[13-k1]: materials/exam/2013-exam1-key.pdf
+[14-e1]: materials/exam/2014-exam1.pdf
+[14-k1]: materials/exam/2014-exam1-key.pdf
+[16-e1]: materials/exam/2016fa-exam1.pdf
+[16-k1]: materials/exam/2016fa-exam1-key.pdf
+[17-e1]: materials/exam/2017fa-exam1.pdf
+[17-k1]: materials/exam/2017fa-exam1-key.pdf
+[18-e1]: materials/exam/2018fa-exam1.pdf
+[18-k1]: materials/exam/2018fa-exam1-key.pdf
+
+<!--- lecture slides --->
+[L1: overview]:      materials/lecture/F18-lecture-01.pdf
+[L2: regex/grammar]: materials/lecture/F18-lecture-02.pdf
+[L3: regex/grammar]: materials/lecture/F18-lecture-03.pdf
+[L4: parsing]:       materials/lecture/F18-lecture-04.pdf
+[L5: parsing]:       materials/lecture/F18-lecture-05.pdf
+[L6: parsing]:       materials/lecture/F18-lecture-06.pdf
+[L7: parsing]:       materials/lecture/F18-lecture-07.pdf
 
 ## General Administrivia
 
@@ -13,12 +125,12 @@ TODO
 - Professor
     - Martin Rinard <rinard@csail.mit.edu>
 - TA's
-    - Jack Choi <jchoi5me@mit.edu>
     - Jackie Bredenberg <jamb@mit.edu>
+    - Jack Choi <jchoi5me@mit.edu>
 
 ### MIT Catalog Description
 
-- Prereq -- `6.004` and `6.031`
+- Prereq -- `6.004`, `6.031`
 - Level -- `U`
 - Units -- `4-4-4`
 
@@ -38,7 +150,7 @@ Many other resources such as technical papers, interesting and useful blog posts
 
 ### Communication
 
-We will distribute assignments and make all announcements ~~on the course web site~~ via Piazza and GitHub page. Important announcements will also be made via email. 
+We will distribute assignments and make all announcements via [Piazza][piazza] and GitHub (this) page. Important announcements will also be made via email.
 
 Since lecture dates are not all finalized at the start of the semester, please pay attention to the schedule.
 
@@ -76,7 +188,9 @@ Any libraries beyond the Java API or basic Scala libraries must be approved by t
 
 ### Class meetings
 
-Lectures will be held on Mondays through Fridays from 11:00am to 12:00pm in room 3-370 MWF, and room 4-149 TR. There is not a lecture on every such day; for details, see the schedule.
+Lectures: 11am-12pm MTWRF in room 32-144.
+
+To find out whether there is lecture on a given day, check calendar above.
 
 ### Contact
 
@@ -86,22 +200,22 @@ If the matter is private, please email the TA's directly.
 
 ### Office Hours and Relectures
 
-~~Tuesday relectures are held on Tuesdays from 5-6 pm in room 2-142 and Thursday relectures are held on Thursdays from 5-6 pm in room 2-135.~~
+Office Hours: TBD
 
-Email the TAs to schedule a relecture ~~for other class days. Office hours are Tuesdays from 6-7 pm in room 2-142 and Thursdays from 6-7 pm in room 2-135. On Tuesdays and Thursdays that lecture doesn't occur, office hours are scheduled during relecture time, i.e., they are held Tuesdays from 5-7 pm in room 2-142 and Thursdays from 5-7 pm in room 2-135.~~
+Relecture: TBD
 
-We will organize additional office hours before each of the quizzes and leading up to the due dates of class projects. We will announce the schedule of these office hours during the class.
+We will have additional office hours before each quiz and each phase of the project.
 
-##  Reference Materials
+## Reference Materials
 
 This section contains a number of useful and/or interesting references selected by the staff. You are not expected to know most of the material on this page for quizzes or for implementing your compiler; however, you may find it interesting and helpful.
 
 ### Official References
 
 - Decaf language spec TODO link
-- `x86_64` architecture guide http://6.035.scripts.mit.edu/fa18/x86-64-architecture-guide.html
-- The complete Intel x64 manual http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-manual-325462.pdf
-- Intel x64 Optimization Reference Manual http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf
+- [`x86_64` architecture guide](http://6.035.scripts.mit.edu/fa18/x86-64-architecture-guide.html)
+- The complete [Intel x64 manual](http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-manual-325462.pdf)
+- [Intel x64 Optimization Reference Manual](http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf)
 
 #### Provided During Exams
 
