@@ -48,39 +48,20 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 |                 | Monday | Tuesday | Wednesday | Thursday | Friday |
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
 | `09/02 - 09/06` | - | - | __FIRST DAY__<br>L1: overview<br>[piazza]<br>course tools<br>project overview | L2: regex/grammar<br>phase-1 release | L3: regex/grammar |
-| `09/09 - 09/13` | L4: parsing | L5: parsing | L6: parsing | L7: parsing | |
-| `09/16 - 09/20` | | | | | Career Fair |
-| `09/23 - 09/27` | | | | | |
-| `09/30 - 10/04` | | | | | | 
-| `10/07 - 10/11` | | | | | |
-| `10/14 - 10/18` | Columbus Day | Columbus Day | | | |
-| `10/21 - 10/25` | | | | | Family Weekend|
-| `10/28 - 11/01` | | | | | |
-| `11/04 - 11/18` | | | | | |
-| `11/11 - 11/15` | | | | | |
-| `11/18 - 11/22` | | | __DROP DATE__ | | |
+| `09/09 - 09/13` | PHASE 1 INFO | L4: parsing | L5: parsing | L6: parsing | L7: parsing |
+| `09/16 - 09/20` | | | __PHASE 1 DUE__ | PHASE 2 INFO | Career Fair |
+| `09/23 - 09/27` | __FINALIZE TEAM__<br>L8 | L9 | L10 | L11 | L11 |
+| `09/30 - 10/04` | L12 | L13 | L14 | | __PHASE 2 DUE__<br>PHASE 3 INFO |
+| `10/07 - 10/11` | L15 | L16 | L17 | | __QUIZ 1__ |
+| `10/14 - 10/18` | Columbus Day | Columbus Day | L18 | L19 | |
+| `10/21 - 10/25` | | | | | Family Weekend |
+| `10/28 - 11/01` | | | __PHASE 3 DUE__<br>PHASE 4 INFO | L20 | L21 |
+| `11/04 - 11/08` | L22 | L23 | | | |
+| `11/11 - 11/15` | | __PHASE 4 DUE__<br>PHASE 5 INFO | L24 | L25 | L26 |
+| `11/18 - 11/22` | L27 | L28 | __DROP DATE__ | | |
 | `11/25 - 11/29` | | | | Thanksgiving | Thanksgiving |
-| `12/02 - 12/06` | | | | | |
-| `12/09 - 12/13` | | | __LAST DAY__ | | |
-<!--- rough idea
-|                 | Monday | Tuesday | Wednesday | Thursday | Friday |
-| :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
-| `09/02 - 09/06` | - | - | __FIRST DAY__<br>L1: overview<br>[piazza]<br>course tools<br>project overview | L2: regex/grammar<br>phase-1 release | L3: regex/grammar |
-| `09/09 - 09/13` | L4: parsing | L5: parsing | L6: parsing | L7: parsing | |
-| `09/16 - 09/20` | | | __PHASE 1 DUE__ | __PHASE 2 INFO SESS__ | Career Fair |
-| `09/23 - 09/27` | | | __FINALIZE TEAMS__ | | |
-| `09/30 - 10/04` | | | | | __PHASE 2 DUE__ | 
-| `10/07 - 10/11` | | | | | __QUIZ 1__ |
-| `10/14 - 10/18` | Columbus Day | Columbus Day | | | |
-| `10/21 - 10/25` | | | | | Family Weekend<br>__PHASE 3 DUE__ |
-| `10/28 - 11/01` | | | | | |
-| `11/04 - 11/18` | | | | | __PHASE 4 DUE__ |
-| `11/11 - 11/15` | | | | | |
-| `11/18 - 11/22` | | | __DROP DATE__ | | |
-| `11/25 - 11/29` | | | | Thanksgiving | Thanksgiving |
-| `12/02 - 12/06` | | | __QUIZ 2__ | | |
+| `12/02 - 12/06` | | __QUIZ 2__ | | __PHASE 5 CHECKPOINT__ | |
 | `12/09 - 12/13` | | __PHASE 5 DUE__ | __LAST DAY__<br>__DERBY__ | | |
---->
 
 <!--- websites --->
 [piazza]: https://piazza.com/mit/fall2019/6035
