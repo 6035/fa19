@@ -183,7 +183,7 @@ If the matter is private, please email the TA's directly.
 
 ### Office Hours and Relectures
 
-These schedules will be decided based on the [survey][form-1].
+These schedules will be decided based on the [survey][gform-1].
 
 Office Hours: TBD
 
