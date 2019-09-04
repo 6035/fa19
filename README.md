@@ -47,7 +47,7 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 
 |                 | Monday | Tuesday | Wednesday | Thursday | Friday |
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
-| `09/02 - 09/06` | | | __FIRST DAY__<br>L1: overview<br>[piazza]<br>[course tools]<br>[project overview]<br>[survey][gform-1] | L2: regex/grammar | L3: regex/grammar<br>P1 OUT |
+| `09/02 - 09/06` | | | __FIRST DAY__<br>L1: overview<br>[piazza]<br>[course tools]<br>[project info]<br>[survey][gform-1] | L2: regex/grammar | L3: regex/grammar<br>P1 OUT |
 | `09/09 - 09/13` | P1 INFO SESS | L4: parsing | L5: parsing | L6: parsing | L7: parsing |
 | `09/16 - 09/20` | | | __P1 DUE__ | P2 INFO SESS | Career Fair |
 | `09/23 - 09/27` | __SUBMIT TEAMS__<br>L8 | L9 | L10 | L11 | L12 |
@@ -72,7 +72,7 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 
 <!--- handouts --->
 [course tools]: materials/handouts/01-athena.pdf
-[project overview]: materials/handouts/01-project-overview.pdf
+[project info]: materials/handouts/01-project-overview.pdf
 
 
 <!--- miniquizzes --->
