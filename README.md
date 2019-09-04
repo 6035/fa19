@@ -6,6 +6,8 @@ There are two websites for 6.035 fa19:
 1. [this page](https://github.com/6035/fa19)
 1. [Piazza][piazza]
 
+__WE WILL MAKE ALL ANNOUNCEMENTS VIA PIAZZA, SO MAKE SURE THAT YOU ENROLL__
+
 If neither site has the information you need, you should [email the TA's directly](#course-staff)
 
 ## Table of Contents
