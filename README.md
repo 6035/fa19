@@ -75,8 +75,8 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 <!--- handouts --->
 [course tools]: materials/handouts/01-athena.pdf
 [project info]: materials/handouts/01-project-overview.pdf
-[decaf language spec]: materials/handouts/01-decaf-spec.pdf
-[scanner / parser project]: materials/handouts/02-scanner-parser-project.pdf
+[decaf spec]: materials/handouts/01-decaf-spec.pdf
+[P1 description]: materials/handouts/02-scanner-parser-project.pdf
 
 
 <!--- miniquizzes --->
