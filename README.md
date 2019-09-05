@@ -49,7 +49,7 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 
 |                 | Monday | Tuesday | Wednesday | Thursday | Friday |
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
-| `09/02 - 09/06` | | | __FIRST DAY__<br>L1: overview<br>[piazza]<br>[project info]<br>[survey][gform-1] | L2: regex/grammar | L3: regex/grammar |
+| `09/02 - 09/06` | | | __FIRST DAY__<br>[L1: overview][lec01]<br>[piazza]<br>[project info]<br>[survey][gform-1] | [L2: regex/grammar][lec02] | L3: regex/grammar |
 | `09/09 - 09/13` | P1 INFO SESS<br>L4: parsing<br>[course tools]<br>[decaf spec]<br>[P1 release] | L5: parsing | L6: parsing | L7: parsing | |
 | `09/16 - 09/20` | | | __P1 DUE__ | P2 INFO SESS | Career Fair |
 | `09/23 - 09/27` | __SUBMIT TEAM__<br>L8 | L9 | L10 | L11 | L12 |
@@ -97,13 +97,8 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 [18-k1]: materials/exam/2018fa-exam1-key.pdf
 
 <!--- lecture slides --->
-[L1: overview]:      materials/lecture/F18-lecture-01.pdf
-[L2: regex/grammar]: materials/lecture/F18-lecture-02.pdf
-[L3: regex/grammar]: materials/lecture/F18-lecture-03.pdf
-[L4: parsing]:       materials/lecture/F18-lecture-04.pdf
-[L5: parsing]:       materials/lecture/F18-lecture-05.pdf
-[L6: parsing]:       materials/lecture/F18-lecture-06.pdf
-[L7: parsing]:       materials/lecture/F18-lecture-07.pdf
+[lec01]: materials/lecture/lec01-f19-intro.pdf
+[lec02]: materials/lecture/lec02-f19-regex-grammar.pdf
 
 ## General Administrivia
 
