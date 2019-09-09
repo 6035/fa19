@@ -2,6 +2,14 @@
 
 __ANYTHING WRITTEN HERE OVERRIDES INSTRUCTIONS IN THE HANDOUT__
 
+## Table of Contents
+
+1. [Phase 1](#phase-1)
+    1. [Getting Started](#getting-started)
+    1. [Constraints](#constraints)
+    1. [Additional Notes](#additional-notes)
+
+
 ## Getting Started
 
 1. Choose a language and its corresponding skeleton repo 
