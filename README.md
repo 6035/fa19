@@ -47,10 +47,12 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 29 30                   27 28 29 30 31          24 25 26 27 28 29 30    29 30 31
 ```
 
+Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to slide `55`.
+
 |                 | Monday | Tuesday | Wednesday | Thursday | Friday |
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
 | `09/02 - 09/06` | | | __FIRST DAY__<br>[L1: overview][lec01]<br>[piazza]<br>[project info]<br>[survey][gform-1] | [L2: regex/grammar][lec02] | [L3: regex/grammar][lec02] |
-| `09/09 - 09/13` | P1 INFO SESS<br>[L4: parsing][lec02]<br>[course tools]<br>[decaf spec]<br>[P1 release] | L5: parsing | L6: parsing | L7: parsing | |
+| `09/09 - 09/13` | P1 INFO SESS<br>[L4: parsing~55][lec02]<br>[course tools]<br>[decaf spec]<br>[P1 release] | L5: parsing | L6: parsing | L7: parsing | |
 | `09/16 - 09/20` | | | __P1 DUE__ | P2 INFO SESS | Career Fair |
 | `09/23 - 09/27` | __SUBMIT TEAM__<br>L8 | L9 | L10 | L11 | L12 |
 | `09/30 - 10/04` | L13 | L14 | | | __P2 DUE__<br>P3 INFO |
