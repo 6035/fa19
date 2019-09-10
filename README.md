@@ -47,10 +47,12 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 29 30                   27 28 29 30 31          24 25 26 27 28 29 30    29 30 31
 ```
 
+Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to slide `55`.
+
 |                 | Monday | Tuesday | Wednesday | Thursday | Friday |
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
-| `09/02 - 09/06` | | | __FIRST DAY__<br>L1: overview<br>[piazza]<br>[project info]<br>[survey][gform-1] | L2: regex/grammar | L3: regex/grammar<br>P1 OUT |
-| `09/09 - 09/13` | P1 INFO SESS<br>[course tools]<br>[decaf language spec]<br>[scanner / parser project] | L4: parsing | L5: parsing | L6: parsing | L7: parsing |
+| `09/02 - 09/06` | | | __FIRST DAY__<br>[L1: overview][lec01]<br>[piazza]<br>[project info]<br>[survey][gform-1] | [L2: regex][lec02] | [L3: regex][lec02] |
+| `09/09 - 09/13` | P1 INFO SESS<br>[L4: grammar~55][lec02]<br>[course tools]<br>[decaf spec]<br>[P1 release] | [L5: grammar~62][lec02]<br>[L5: parsing~46][lec03] | L6: parsing | L7: parsing | |
 | `09/16 - 09/20` | | | __P1 DUE__ | P2 INFO SESS | Career Fair |
 | `09/23 - 09/27` | __SUBMIT TEAM__<br>L8 | L9 | L10 | L11 | L12 |
 | `09/30 - 10/04` | L13 | L14 | | | __P2 DUE__<br>P3 INFO |
@@ -75,8 +77,8 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 <!--- handouts --->
 [course tools]: materials/handouts/01-athena.pdf
 [project info]: materials/handouts/01-project-overview.pdf
-[decaf language spec]: materials/handouts/01-decaf-spec.pdf
-[scanner / parser project]: materials/handouts/02-scanner-parser-project.pdf
+[decaf spec]: materials/handouts/01-decaf-spec.pdf
+[P1 release]: materials/handouts/02-scanner-parser-project.pdf
 
 
 <!--- miniquizzes --->
@@ -97,13 +99,9 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 [18-k1]: materials/exam/2018fa-exam1-key.pdf
 
 <!--- lecture slides --->
-[L1: overview]:      materials/lecture/F18-lecture-01.pdf
-[L2: regex/grammar]: materials/lecture/F18-lecture-02.pdf
-[L3: regex/grammar]: materials/lecture/F18-lecture-03.pdf
-[L4: parsing]:       materials/lecture/F18-lecture-04.pdf
-[L5: parsing]:       materials/lecture/F18-lecture-05.pdf
-[L6: parsing]:       materials/lecture/F18-lecture-06.pdf
-[L7: parsing]:       materials/lecture/F18-lecture-07.pdf
+[lec01]: materials/lecture/lec01-f19-intro.pdf
+[lec02]: materials/lecture/lec02-f19-regex-grammar.pdf
+[lec03]: materials/lecture/lec03-f19-top-down-parsing.pdf
 
 ## General Administrivia
 
@@ -187,11 +185,16 @@ If the matter is private, please email the TA's directly.
 
 ### Office Hours and Relectures
 
-These schedules will be decided based on the [survey][gform-1].
+Office Hours:
+- Tuesday's 4pm-6pm in 34-304
+- additional ones available via request
 
-Office Hours: TBD
+Relecture:
+- Monday's 7pm-9pm in 34-304
+- Thursday's 4pm-5pm in 34-304
+- additional ones available via request
 
-Relecture: TBD
+Note that relectures are only held if students email the TA's in advance to request one.
 
 We will have additional office hours before each quiz and each phase of the project.
 
