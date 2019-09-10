@@ -184,11 +184,16 @@ If the matter is private, please email the TA's directly.
 
 ### Office Hours and Relectures
 
-These schedules will be decided based on the [survey][gform-1].
+Office Hours:
+- Tuesday's 4pm-6pm in 34-304
+- additional ones available via request
 
-Office Hours: TBD
+Relecture:
+- Monday's 7pm-9pm in 34-304
+- Thursday's 4pm-5pm in 34-304
+- additional ones available via request
 
-Relecture: TBD
+Note that relectures are only held if students email the TA's in advance to request one.
 
 We will have additional office hours before each quiz and each phase of the project.
 
