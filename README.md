@@ -173,7 +173,9 @@ Any libraries beyond the Java API or basic Scala libraries must be approved by t
 
 ### Class meetings
 
-Lectures: 11am-12pm MTWRF in room 32-144.
+Lectures:
+- 11am-12pm MWF in 32-144.
+- 11am-12pm TR in 66-144
 
 To find out whether there is lecture on a given day, check calendar above.
 
