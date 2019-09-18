@@ -53,7 +53,7 @@ Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to s
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
 | `09/02 - 09/06` | | | __FIRST DAY__<br>[L1: overview][lec01]<br>[piazza]<br>[project info]<br>[survey][gform-1] | [L2: regex][lec02] | [L3: regex][lec02] |
 | `09/09 - 09/13` | P1 INFO SESS<br>[L4: grammar~55][lec02]<br>[course tools]<br>[decaf spec]<br>[P1 release] | [L5: grammar~62][lec02] | [L6: parsing~46][lec03] | [L7: parsing~72][lec03] | [L8: parsing~64][lec04] |
-| `09/16 - 09/20` | [L9: parsing~94][lec04] | L10 | __P1 DUE__ | P2 INFO SESS<br>[P2 release] | Career Fair |
+| `09/16 - 09/20` | [L9: parsing~94][lec04] | [L10: parsing][lec04] | __P1 DUE__ | P2 INFO SESS<br>[P2 release] | Career Fair |
 | `09/23 - 09/27` | [SUBMIT TEAM]<br>L8 | L9 | L10 | L11 | L12 |
 | `09/30 - 10/04` | L13 | L14 | | | __P2 DUE__<br>P3 INFO |
 | `10/07 - 10/11` | L15 | L16 | L17 | | __QUIZ 1__ |
