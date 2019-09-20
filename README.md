@@ -53,7 +53,7 @@ Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to s
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
 | `09/02 - 09/06` | | | __FIRST DAY__<br>[L1: overview][lec01]<br>[piazza]<br>[project info]<br>[survey][gform-1] | [L2: regex][lec02] | [L3: regex][lec02] |
 | `09/09 - 09/13` | P1 INFO SESS<br>[L4: grammar~55][lec02]<br>[course tools]<br>[decaf spec]<br>[P1 release] | [L5: grammar~62][lec02] | [L6: parsing~46][lec03] | [L7: parsing~72][lec03] | [L8: parsing~64][lec04] |
-| `09/16 - 09/20` | [L9: parsing~94][lec04] | [L10: parsing][lec04] | __P1 DUE__ | P2 INFO SESS<br>[P2 release] | Career Fair |
+| `09/16 - 09/20` | [L9: parsing~94][lec04] | [L10: parsing][lec04] | __P1 DUE__ | P2 INFO SESS<br>[P2 release]<br>[L11: IR~16][lec05] | Career Fair |
 | `09/23 - 09/27` | [SUBMIT TEAM]<br>L8 | L9 | L10 | L11 | L12 |
 | `09/30 - 10/04` | L13 | L14 | | | __P2 DUE__<br>P3 INFO |
 | `10/07 - 10/11` | L15 | L16 | L17 | | __QUIZ 1__ |
@@ -66,6 +66,13 @@ Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to s
 | `11/25 - 11/29` | | | | Thanksgiving | Thanksgiving |
 | `12/02 - 12/06` | | __QUIZ 2__ | | __CHECKPOINT__ | |
 | `12/09 - 12/13` | | __P5 DUE__ | __LAST DAY__<br>__DERBY__ | | |
+
+<!--- lecture slides --->
+[lec01]: materials/lecture/lec01-f19-intro.pdf
+[lec02]: materials/lecture/lec02-f19-regex-grammar.pdf
+[lec03]: materials/lecture/lec03-f19-top-down-parsing.pdf
+[lec04]: materials/lecture/lec04-f19-shift-reduce-parsing.pdf
+[lec05]: materials/lecture/lec05-f19-intermediate-representation.pdf
 
 <!--- others --->
 [piazza]: https://piazza.com/mit/fall2019/6035
@@ -98,12 +105,6 @@ Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to s
 [17-k1]: materials/exam/2017fa-exam1-key.pdf
 [18-e1]: materials/exam/2018fa-exam1.pdf
 [18-k1]: materials/exam/2018fa-exam1-key.pdf
-
-<!--- lecture slides --->
-[lec01]: materials/lecture/lec01-f19-intro.pdf
-[lec02]: materials/lecture/lec02-f19-regex-grammar.pdf
-[lec03]: materials/lecture/lec03-f19-top-down-parsing.pdf
-[lec04]: materials/lecture/lec04-f19-shift-reduce-parsing.pdf
 
 ## General Administrivia
 
