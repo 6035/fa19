@@ -79,14 +79,13 @@ Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to s
 [gform-1]: https://docs.google.com/forms/d/e/1FAIpQLScRu9Sx9VTtfuxup5NaDhYXrFnFmRG1ivvsFWiE9yazulOrIA/viewform
 
 <!--- project phases --->
-[phase-1]: phase-1/
+[P1 release]: phase-1/
+[P2 release]: phase-2/
 
 <!--- handouts --->
 [course tools]: materials/handouts/01-athena.pdf
 [project info]: materials/handouts/01-project-overview.pdf
 [decaf spec]: materials/handouts/01-decaf-spec.pdf
-[P1 release]: materials/handouts/02-scanner-parser-project.pdf
-[P2 release]: materials/handouts/04-semantics-project.pdf
 [SUBMIT TEAM]: https://docs.google.com/forms/d/e/1FAIpQLScOaXhXZeL4xk2pe1PfIAHwwi6VmXS6OCNDhWOLTQ5l1VVJ-w/viewform?usp=sf_link
 
 <!--- miniquizzes --->
