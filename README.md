@@ -47,7 +47,7 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa    Su Mo Tu
 29 30                   27 28 29 30 31          24 25 26 27 28 29 30    29 30 31
 ```
 
-Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to slide `55`.
+__Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to slide `55`__
 
 |                 | Monday | Tuesday | Wednesday | Thursday | Friday |
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
