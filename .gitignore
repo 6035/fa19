@@ -1,3 +1,5 @@
+**/*.ppt
+**/*.pptx
 **/hidden/
 .DS_Store
 README.html
