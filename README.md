@@ -53,16 +53,16 @@ Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to s
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
 | `09/02 - 09/06` | | | __FIRST DAY__<br>[L1: overview][lec01]<br>[piazza]<br>[project info]<br>[survey][gform-1] | [L2: regex][lec02] | [L3: regex][lec02] |
 | `09/09 - 09/13` | P1 INFO SESS<br>[L4: grammar~55][lec02]<br>[course tools]<br>[decaf spec]<br>[P1 release] | [L5: grammar~62][lec02] | [L6: parsing~46][lec03] | [L7: parsing~72][lec03] | [L8: parsing~64][lec04] |
-| `09/16 - 09/20` | L9 | L10 | __P1 DUE__ | P2 INFO SESS<br>[P2 release] | Career Fair |
-| `09/23 - 09/27` | [SUBMIT TEAM]<br>L8 | L9 | L10 | L11 | L12 |
-| `09/30 - 10/04` | L13 | L14 | | | __P2 DUE__<br>P3 INFO |
-| `10/07 - 10/11` | L15 | L16 | L17 | | __QUIZ 1__ |
-| `10/14 - 10/18` | Columbus Day | Columbus Day | L18 | L19 | |
+| `09/16 - 09/20` | L9 | L10 | __P1 DUE__ | P2 INFO SESS<br>L11<br>[P2 release] | Career Fair |
+| `09/23 - 09/27` | [SUBMIT TEAM]<br>L12 | L13 | L14 | L15 | L16 |
+| `09/30 - 10/04` | L | L | | | __P2 DUE__<br>P3 INFO |
+| `10/07 - 10/11` | L | L | L | | __QUIZ 1__ |
+| `10/14 - 10/18` | Columbus Day | Columbus Day | L | L | |
 | `10/21 - 10/25` | | | | | Family Weekend |
-| `10/28 - 11/01` | | | __P3 DUE__<br>P4 INFO SESS | L20 | L21 |
-| `11/04 - 11/08` | L22 | L23 | | | |
-| `11/11 - 11/15` | | __P4 DUE__<br>P5 INFO SESS | L24 | L25 | L26 |
-| `11/18 - 11/22` | L27 | L28 | __DROP DATE__ | | |
+| `10/28 - 11/01` | | | __P3 DUE__<br>P4 INFO SESS | L | L |
+| `11/04 - 11/08` | L | L | | | |
+| `11/11 - 11/15` | | __P4 DUE__<br>P5 INFO SESS | L | L | L |
+| `11/18 - 11/22` | L | L | __DROP DATE__ | | |
 | `11/25 - 11/29` | | | | Thanksgiving | Thanksgiving |
 | `12/02 - 12/06` | | __QUIZ 2__ | | __CHECKPOINT__ | |
 | `12/09 - 12/13` | | __P5 DUE__ | __LAST DAY__<br>__DERBY__ | | |
