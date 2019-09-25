@@ -53,8 +53,8 @@ __Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to
 | :-:             | :-:    | :-:     | :-:       | :-:      | :-:    |
 | `09/02 - 09/06` | | | __FIRST DAY__<br>[L1: overview][lec01]<br>[piazza]<br>[project info]<br>[survey][gform-1] | [L2: regex][lec02] | [L3: regex][lec02] |
 | `09/09 - 09/13` | P1 INFO SESS<br>[L4: grammar~55][lec02]<br>[course tools]<br>[decaf spec]<br>[P1 release] | [L5: grammar~62][lec02] | [L6: parsing~46][lec03] | [L7: parsing~72][lec03] | [L8: parsing~64][lec04] |
-| `09/16 - 09/20` | [L9: parsing~94][lec04] | [L10: parsing][lec04] | __P1 DUE__ | P2 INFO SESS<br>[P2 release]<br>[L11: high-IR~16][lec05] | Career Fair |
-| `09/23 - 09/27` | [SUBMIT TEAM]<br>[L12: high-IR~52][lec05]  | L13 | L14 | L15 | L16 |
+| `09/16 - 09/20` | [L9: parsing~94][lec04] | [L10: parsing~$][lec04] | __P1 DUE__ | P2 INFO SESS<br>[P2 release]<br>[L11: high-IR~16][lec05] | Career Fair |
+| `09/23 - 09/27` | [SUBMIT TEAM]<br>[L12: high-IR~52][lec05]  | [L13: high-IR~76][lec05]<br>[L13: semantics~29][lec06] | L14 | L15 | L16 |
 | `09/30 - 10/04` | L | L | | | __P2 DUE__<br>P3 INFO |
 | `10/07 - 10/11` | L | L | L | | __QUIZ 1__ |
 | `10/14 - 10/18` | Columbus Day | Columbus Day | L | L | |
@@ -73,6 +73,7 @@ __Note: `L4: parsing~55` means that the topic was `parsing` and we covered up to
 [lec03]: materials/lecture/lec03-f19-top-down-parsing.pdf
 [lec04]: materials/lecture/lec04-f19-shift-reduce-parsing.pdf
 [lec05]: materials/lecture/lec05-f19-intermediate-representation.pdf
+[lec06]: materials/lecture/lec06-f19-semantic-analysis.pdf
 
 <!--- others --->
 [piazza]: https://piazza.com/mit/fall2019/6035
