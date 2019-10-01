@@ -55,7 +55,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 | `09/09 - 09/13` | P1 INFO SESS<br>[L: grammar~55][lec02]<br>[course tools]<br>[decaf spec]<br>[P1 RELEASE] | [L: grammar~62][lec02] | [L: parsing~46][lec03] | [L: parsing~72][lec03] | [L: parsing~64][lec04] |
 | `09/16 - 09/20` | [L: parsing~94][lec04] | [L: parsing~$][lec04] | __P1 DUE__ | P2 INFO SESS<br>[P2 RELEASE]<br>[L: high-IR~16][lec05] | Career Fair |
 | `09/23 - 09/27` | [SUBMIT TEAM]<br>[L: high-IR~52][lec05]  | [L: high-IR~76][lec05]<br>[L: semantic~29][lec06] | [L: semantic~46][lec06] | | |
-| `09/30 - 10/04` | L | L | | | __P2 DUE__<br>P3 INFO |
+| `09/30 - 10/04` | L | [L: codegen~22][lec07] | | | __P2 DUE__<br>P3 INFO |
 | `10/07 - 10/11` | L | L | L | | __QUIZ 1__ |
 | `10/14 - 10/18` | Columbus Day | Columbus Day | L | L | |
 | `10/21 - 10/25` | | | | | Family Weekend |
@@ -74,6 +74,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 [lec04]: materials/lecture/lec04-f19-shift-reduce-parsing.pdf
 [lec05]: materials/lecture/lec05-f19-intermediate-representation.pdf
 [lec06]: materials/lecture/lec06-f19-semantic-analysis.pdf
+[lec07]: materials/lecture/lec07-unoptimized-codegen.pdf
 
 <!--- others --->
 [piazza]: https://piazza.com/mit/fall2019/6035
