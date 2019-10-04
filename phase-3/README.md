@@ -10,6 +10,7 @@ By the end of code generation, you should have a fully working Decaf compiler. Y
 
 1. [Phase 3 -- Code Generation](#phase-3--code-generation)
     1. [Table of Contents](#table-of-contents)
+    1. [Setup](#setup)
     1. [Submission](#submission)
     1. [Project Assignment](#project-assignment)
     1. [Compiling and Libraries](#compiling-and-libraries)
@@ -17,6 +18,14 @@ By the end of code generation, you should have a fully working Decaf compiler. Y
         1. [Documentation](#documentation)
     1. [Reference](#reference)
     1. [Assembly Examples](#assembly-examples)
+
+## Setup
+
+Run this from your team's repo.
+
+```bash
+git pull tests master
+```
 
 ## Submission
 
