@@ -218,7 +218,6 @@ This section contains a number of useful and/or interesting references selected 
 #### Provided During Exams
 
 1. [x64 cheat sheet](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf) -- lists and tables detailing registers and assembly commands
-1. [Introduction to x86-64 Assembly](https://www3.nd.edu/~dthain/courses/cse40243/fall2015/intel-intro.html) -- more info on registers and some assembly examples.
 
 ### Unofficial References
 
