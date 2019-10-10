@@ -211,9 +211,13 @@ This section contains a number of useful and/or interesting references selected 
 ### Official References
 
 1. Decaf language spec TODO link
-1. [`x86_64` architecture guide](http://6.035.scripts.mit.edu/fa18/x86-64-architecture-guide.html)
 1. The complete [Intel x64 manual](http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-manual-325462.pdf)
 1. [Intel x64 Optimization Reference Manual](http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf)
+1. [x64 wiki](https://en.wikibooks.org/wiki/X86_Assembly/X86_Instructions)
+1. [x64 cheat sheet](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf) -- lists and tables detailing registers and assembly commands
+1. [x86-64 architecture guide](http://6.035.scripts.mit.edu/fa18/x86-64-architecture-guide.html) -- a walkthrough with an example, and common commands
+1. [Intel x64 manual](https://software.intel.com/en-us/articles/intel-sdm)
+1. [Intel developer manual](https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf) -- detailed description of some assembly instructions
 
 #### Provided During Exams
 
