@@ -56,7 +56,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 | `09/16 - 09/20` | [L: parsing~94][lec04] | [L: parsing~$][lec04] | __P1 DUE__ | P2 INFO SESS<br>[P2 RELEASE]<br>[L: high-IR~16][lec05] | Career Fair |
 | `09/23 - 09/27` | [SUBMIT TEAM]<br>[L: high-IR~52][lec05]  | [L: high-IR~76][lec05]<br>[L: semantic~29][lec06] | [L: semantic~46][lec06] | | |
 | `09/30 - 10/04` | [L: high-IR~$][lec05]<br>[L: semantic~$][lec06] | [L: codegen~22][lec07] | [L: codegen~59][lec07] | [L: codegen:~70][lec07] | __P2 DUE__<br>[P3 RELEASE] |
-| `10/07 - 10/11` | [L: codegen~124][lec07] | L | L | | __QUIZ 1__ |
+| `10/07 - 10/11` | [L: codegen~124][lec07] | L | L | | __QUIZ 1__ <br>[quiz]<br>[solutions]|
 | `10/14 - 10/18` | Columbus Day | Columbus Day | L | L | |
 | `10/21 - 10/25` | | | | | Family Weekend |
 | `10/28 - 11/01` | | | __P3 DUE__<br>P4 INFO SESS | L | L |
@@ -90,6 +90,8 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 [project info]: materials/handouts/01-project-overview.pdf
 [decaf spec]: materials/handouts/01-decaf-spec.pdf
 [SUBMIT TEAM]: https://docs.google.com/forms/d/e/1FAIpQLScOaXhXZeL4xk2pe1PfIAHwwi6VmXS6OCNDhWOLTQ5l1VVJ-w/viewform?usp=sf_link
+[quiz]: materials/exam/2019fa-exam1-answers.pdf
+[solutions]: materials/exam/2019fa-exam1.pdf
 
 <!--- miniquizzes --->
 
