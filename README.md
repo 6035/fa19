@@ -57,7 +57,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 | `09/23 - 09/27` | [SUBMIT TEAM]<br>[L: high-IR~52][lec05]  | [L: high-IR~76][lec05]<br>[L: semantic~29][lec06] | [L: semantic~46][lec06] | | |
 | `09/30 - 10/04` | [L: high-IR~$][lec05]<br>[L: semantic~$][lec06] | [L: codegen~22][lec07] | [L: codegen~59][lec07] | [L: codegen:~70][lec07] | __P2 DUE__<br>[P3 RELEASE] |
 | `10/07 - 10/11` | [L: codegen~124][lec07] | L | L | | __QUIZ 1__ |
-| `10/14 - 10/18` | Columbus Day | Columbus Day | L | L | |
+| `10/14 - 10/18` | Columbus Day | Columbus Day | [L: opt~59][lec08] | L | |
 | `10/21 - 10/25` | | | | | Family Weekend |
 | `10/28 - 11/01` | | | __P3 DUE__<br>P4 INFO SESS | L | L |
 | `11/04 - 11/08` | L | L | | | |
@@ -75,6 +75,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 [lec05]: materials/lecture/lec05-f19-intermediate-representation.pdf
 [lec06]: materials/lecture/lec06-f19-semantic-analysis.pdf
 [lec07]: materials/lecture/lec07-unoptimized-codegen.pdf
+[lec08]: materials/lecture/lec08-program-analysis.pdf
 
 <!--- others --->
 [piazza]: https://piazza.com/mit/fall2019/6035
