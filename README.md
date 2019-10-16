@@ -90,8 +90,8 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 [project info]: materials/handouts/01-project-overview.pdf
 [decaf spec]: materials/handouts/01-decaf-spec.pdf
 [SUBMIT TEAM]: https://docs.google.com/forms/d/e/1FAIpQLScOaXhXZeL4xk2pe1PfIAHwwi6VmXS6OCNDhWOLTQ5l1VVJ-w/viewform?usp=sf_link
-[quiz]: materials/exam/2019fa-exam1-answers.pdf
-[solutions]: materials/exam/2019fa-exam1.pdf
+[quiz]: materials/exam/2019fa-exam1.pdf
+[solutions]: materials/exam/2019fa-exam1-answers.pdf
 
 <!--- miniquizzes --->
 
