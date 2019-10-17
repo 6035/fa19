@@ -124,6 +124,9 @@ Your documentation must include the following parts, which could be described as
         movq $32, %rsi                 # 2nd arg; load int constant into %rsi
         call printf                    # call with the above args
 
+        # analogous to 'return 0;' in C's main
+        mov $0, %rax
+
         # post-call ritual
         movq %rbp, %rsp
         popq %rbp
