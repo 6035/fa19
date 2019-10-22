@@ -134,6 +134,9 @@ Your documentation must include the following parts, which could be described as
     ```
 1. a function `calc(a, b, c, d, e)` which returns `(a*b - c/d)*e` where `c/d` discards remainders; for example `3/2 = 1`
     ```s
+    format_str_0:
+        .string "%d\n"  # string constant
+    
     calc:
         # pre-call ritual
         pushq %rbp
@@ -162,7 +165,9 @@ Your documentation must include the following parts, which could be described as
         ret
     
     main:
-        # ...
+        # pre-call ritual
+        pushq %rbp         # save base pointer
+        movq  %rsp, %rbp   # save stack pointer
 
         # calculate (4*5 - 3/2)*1
         movq $4, %rdi  # 1st arg; a=4
@@ -172,5 +177,16 @@ Your documentation must include the following parts, which could be described as
         movq $1, %r8   # 5th arg; e=1
         call calc # retval = 19 is now in %rax
 
-        # ..
+        # call function `printf`
+        leaq format_str_0(%rip), %rdi  # 1st arg; load the address of str constant into %rdi
+        movq %rax, %rsi                # 2nd arg; load result of calc into %rsi
+        call printf                    # call with the above args
+
+        # analogous to 'return 0;' in C's main
+        mov $0, %rax
+
+        # post-call ritual
+        movq %rbp, %rsp
+        popq %rbp
+        ret  # return to where the function was called
     ```
