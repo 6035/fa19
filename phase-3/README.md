@@ -80,7 +80,7 @@ pushq $3     // %rsp % 16 = 8, stack pointer is  8 byte aligned, but not 16
 call printf  // we are entering the function while %rsp is NOT 16-byte aligned
 ```
 
-Recall that every `pushq` decrements the stack pointer by 8 bytes. This maintains the invariant that `%rsp` is 8-byte aligned at all times, but not necessarily 16-byte aligned. This will often cause segfaults.
+Recall that every `pushq` decrements the stack pointer by 8 bytes. This maintains the invariant that `%rsp` is 8-byte aligned at all times, but not necessarily 16-byte aligned. So if you encounter foreign functions that require 16-byte alignment and your stack pointer is not 16-byte aligned, __IT MAY SEGFAULT__.
 
 For now, let's use the following strategy to mitigate this problem:
 > maintain an invariant that your `%rsp % 16 = 0` __AT ALL TIMES__
