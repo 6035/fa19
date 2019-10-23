@@ -138,11 +138,13 @@ Your documentation must include the following parts, which could be described as
     ```s
     format_str_0:
         .string "%d\n"  # string constant
+        .align 16
 
     .globl main
     main:
         # pre-call ritual
         pushq %rbp         # save base pointer
+        pushq %rbp         # memory alignment hack
         movq  %rsp, %rbp   # save stack pointer
 
         # call function `printf`
@@ -162,10 +164,12 @@ Your documentation must include the following parts, which could be described as
     ```s
     format_str_0:
         .string "%d\n"  # string constant
+        .align 16
     
     calc:
         # pre-call ritual
         pushq %rbp
+        pushq %rbp         # memory alignment hack
         movq  %rsp, %rbp
 
         # %rsi = %rdi * %rsi; calculate a * b
@@ -193,6 +197,7 @@ Your documentation must include the following parts, which could be described as
     main:
         # pre-call ritual
         pushq %rbp         # save base pointer
+        pushq %rbp         # memory alignment hack
         movq  %rsp, %rbp   # save stack pointer
 
         # calculate (4*5 - 3/2)*1
