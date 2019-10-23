@@ -67,9 +67,7 @@ __TLDR: make sure that if your `%rsp` contains a value `n`, `n % 16 = 0` AT ALL 
  
 There is a concept called `memory alignment` that plays a big role in hardware. To say that we require some address to be `n-byte aligned` is to say that we require `address % n = 0`. In other words, the numerical value of the address must be a multiple of `n`.
  
-Some instructions require the address stored in `%rsp` to be 8 byte aligned, whereas some instructions require it to be 16 byte aligned. The use of registers that require 16-byte alignment is kind of not important at this point in time.
- 
-However the functions in standard c library that you need to use, for example `printf`, do often use these instructions that require 16 byte alignment.
+Some instructions require the stack pointer to be 16-byte aligned. We will not worry about the use of these instructions for now. __Functions in the C standard library often use these instructions, INCLUDING `printf`__.
  
 Consider the following example:
 
