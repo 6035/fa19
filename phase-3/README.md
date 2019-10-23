@@ -145,7 +145,6 @@ Your documentation must include the following parts, which could be described as
         # pre-call ritual
         pushq %rbp         # save base pointer
         movq  %rsp, %rbp   # save stack pointer
-        pushq (%rsp)       # make sure %rsp & 16 = 0
 
         # call function `printf`
         leaq format_str_0(%rip), %rdi  # 1st arg; load the address of str constant into %rdi
@@ -170,7 +169,6 @@ Your documentation must include the following parts, which could be described as
         # pre-call ritual
         pushq %rbp
         movq  %rsp, %rbp
-        pushq (%rsp)       # make sure %rsp & 16 = 0
 
         # %rsi = %rdi * %rsi; calculate a * b
         imul %rdi, %rsi
@@ -198,7 +196,6 @@ Your documentation must include the following parts, which could be described as
         # pre-call ritual
         pushq %rbp         # save base pointer
         movq  %rsp, %rbp   # save stack pointer
-        pushq (%rsp)       # make sure %rsp & 16 = 0
 
         # calculate (4*5 - 3/2)*1
         movq $4, %rdi  # 1st arg; a=4
