@@ -63,7 +63,7 @@ Decaf does not have any input/output functions. Part of the assignment is to imp
 
 ## Memory Alignment
 
-__TLDR: make sure that if your `%rsp` contains a value `n`, `n % 16 = 0` AT ALL TIMES__
+__TLDR: make sure that if your `%rsp` contains a value `n`, `n % 16 = 0` when entering a function call__
  
 There is a concept called `memory alignment` that plays a big role in hardware. To say that we require some address to be `n-byte aligned` is to say that we require `address % n = 0`. In other words, the numerical value of the address must be a multiple of `n`.
  
@@ -80,10 +80,10 @@ pushq $3     // %rsp % 16 = 8, stack pointer is  8 byte aligned, but not 16
 call printf  // we are entering the function while %rsp is NOT 16-byte aligned
 ```
 
-Recall that every `pushq` decrements the stack pointer by 8 bytes. This maintains the invariant that `%rsp` is 8-byte aligned at all times, but not necessarily 16-byte aligned. So if you call a foreign functions that expects `%rsp` to be 16-byte aligned and your stack pointer is not 16-byte aligned, __IT MAY SEGFAULT__.
+Recall that every `pushq` decrements the stack pointer by 8 bytes. This maintains the invariant that `%rsp` is 8-byte aligned at all times, but not necessarily 16-byte aligned. So if you call a foreign functions that expects `%rsp` to be 16-byte aligned and your stack pointer is not 16-byte aligned when you call it, __IT MAY SEGFAULT__.
 
 For now, let's use the following strategy to mitigate this problem:
-> maintain an invariant that your `%rsp % 16 = 0` __AT ALL TIMES__
+> maintain an invariant that your `%rsp % 16 = 0` __WHEN YOU CALL A FUNCTION__
  
 This will ensure that you will not segfault due to memory alignment, for now.
 
