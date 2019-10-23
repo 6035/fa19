@@ -69,23 +69,23 @@ There is a concept called `memory alignment` that plays a big role in hardware. 
  
 Some instructions require the stack pointer to be 16-byte aligned. We will not worry about the use of these instructions for now. __Functions in the C standard library often use these instructions, INCLUDING `printf`__.
  
-Consider the following example:
+Consider the following assembly:
 
 ```s
 ...
-pushq $1  // %rsp % 16 = 8, stack is  8 byte aligned, but not 16
-pushq $2  // %rsp % 16 = 0, stack is 16 byte aligned
-pushq $3  // %rsp % 16 = 8, stack is  8 byte aligned, but not 16
-call printf
+// assume that at this point, %rsp % 16 = 0
+pushq $1     // %rsp % 16 = 8, stack pointer is  8 byte aligned, but not 16
+pushq $2     // %rsp % 16 = 0, stack pointer is 16 byte aligned
+pushq $3     // %rsp % 16 = 8, stack pointer is  8 byte aligned, but not 16
+call printf  // we are entering the function while %rsp is NOT 16-byte aligned
 ```
 
-Notice that every time we push, we are decrementing the stack pointer by 8. This ensures that `%rsp` is 8-byte aligned at all times, but not 16-byte aligned.
+Recall that every `pushq` decrements the stack pointer by 8 bytes. This maintains the invariant that `%rsp` is 8-byte aligned at all times, but not necessarily 16-byte aligned. This will often cause segfaults.
+
+For now, let's use the following strategy to mitigate this problem:
+> maintain an invariant that your `%rsp % 16 = 0` __AT ALL TIMES__
  
-So for now, make sure that everything is 16-byte aligned at all times. When it comes time, we can talk more about how to make this more efficient.
- 
-What will happen is that when the instruction runs, it will segfault.
- 
-I will answer these questions in detail if need be, but for now let's do the following: __maintain an invariant that your `%rsp` is 16-byte aligned at all times__. This means that everything you store must be at address `n` such that `n % 16 = 0`.
+This will ensure that you will not segfault due to memory alignment, for now.
 
 ## What to Hand In
 
