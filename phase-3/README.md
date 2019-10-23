@@ -53,7 +53,7 @@ You will have a number of opportunities to do some creative design work for the 
 ./run.sh --target=assembly 'main.dcf'              # print assembly to stdout
 ./run.sh --target=assembly 'main.dcf' -o 'main.s'  # write to 'main.s' instead
 
-gcc -no-pie 'main.s' -o 'main'  # create an executable 'main' from 'main.s'
+gcc -no-pie -O0 'main.s' -o 'main'  # create an executable 'main' from 'main.s'
 
 ./main                        # run the executable
 ./main &> /dev/null; echo $?  # print the exit code
