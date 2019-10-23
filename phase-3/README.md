@@ -63,7 +63,7 @@ Decaf does not have any input/output functions. Part of the assignment is to imp
 
 ## Memory Alignment
 
-__TLDR: make sure that if your `%rsp` contains a value `n`, `n % 16 = 0` when entering a function call__
+__TLDR: make sure that if your `%rsp` contains a value `n`, `n % 16 = 0` when you `call` a function__
  
 There is a concept called `memory alignment` that plays a big role in hardware. To say that we require some address to be `n-byte aligned` is to say that we require `address % n = 0`. In other words, the numerical value of the address must be a multiple of `n`.
  
