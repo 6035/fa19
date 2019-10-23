@@ -14,6 +14,7 @@ By the end of code generation, you should have a fully working Decaf compiler. Y
     1. [Submission](#submission)
     1. [Project Assignment](#project-assignment)
     1. [Compiling and Libraries](#compiling-and-libraries)
+    1. [Memory Alignment](#memory-alignment)
     1. [What to Hand In](#what-to-hand-in)
         1. [Documentation](#documentation)
     1. [Reference](#reference)
@@ -48,7 +49,6 @@ You will have a number of opportunities to do some creative design work for the 
 
 ## Compiling and Libraries
 
-
 ```bash
 ./run.sh --target=assembly 'main.dcf'              # print assembly to stdout
 ./run.sh --target=assembly 'main.dcf' -o 'main.s'  # write to 'main.s' instead
@@ -60,6 +60,34 @@ gcc -no-pie -O0 'main.s' -o 'main'  # create an executable 'main' from 'main.s'
 ```
 
 Decaf does not have any input/output functions. Part of the assignment is to implement the standard x86-64 calling convention for `import` statements, so that you can interface with the outside world. Any function that is called using `import` needs to be linked in separately. `gcc` will link against any standard libraries, such as `printf` (you may need to use the `-l` argument for `gcc` to link some libraries). The testing files provided to you link against the standard C library. If you want to use functions that are not easy to use in Decaf (handle pointers, etc), you are welcome to write your own library calls in `C`, compile them to object files (using `gcc -c`) and then link them in by hand when compiling your assembly.
+
+## Memory Alignment
+
+__TLDR: make sure that if your `%rsp` contains a value `n`, `n % 16 = 0` AT ALL TIMES__
+ 
+There is a concept called `memory alignment` that plays a big role in hardware. To say that we require some address to be `n-byte aligned` is to say that we require `address % n = 0`. In other words, the numerical value of the address must be a multiple of `n`.
+ 
+Some instructions require the address stored in `%rsp` to be 8 byte aligned, whereas some instructions require it to be 16 byte aligned. The use of registers that require 16-byte alignment is kind of not important at this point in time.
+ 
+However the functions in standard c library that you need to use, for example `printf`, do often use these instructions that require 16 byte alignment.
+ 
+Consider the following example:
+
+```s
+...
+pushq $1  // %rsp % 16 = 8, stack is  8 byte aligned, but not 16
+pushq $2  // %rsp % 16 = 0, stack is 16 byte aligned
+pushq $3  // %rsp % 16 = 8, stack is  8 byte aligned, but not 16
+call printf
+```
+
+Notice that every time we push, we are decrementing the stack pointer by 8. This ensures that `%rsp` is 8-byte aligned at all times, but not 16-byte aligned.
+ 
+So for now, make sure that everything is 16-byte aligned at all times. When it comes time, we can talk more about how to make this more efficient.
+ 
+What will happen is that when the instruction runs, it will segfault.
+ 
+I will answer these questions in detail if need be, but for now let's do the following: __maintain an invariant that your `%rsp` is 16-byte aligned at all times__. This means that everything you store must be at address `n` such that `n % 16 = 0`.
 
 ## What to Hand In
 
