@@ -191,7 +191,8 @@ Your documentation must include the following parts, which could be described as
         movq %rbp, %rsp
         popq %rbp
         ret
-    
+
+    .globl main 
     main:
         # pre-call ritual
         pushq %rbp         # save base pointer
