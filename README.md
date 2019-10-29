@@ -59,7 +59,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 | `10/07 - 10/11` | [L: codegen~124][lec07] | L | L | | __QUIZ 1__<br>[quiz]<br>[solutions]|
 | `10/14 - 10/18` | Columbus Day | Columbus Day | [L: opt~59][lec08] | [L: dataflow~16][lec09] | |
 | `10/21 - 10/25` | [L: dataflow~$][lec09] | | | | Family Weekend |
-| `10/28 - 11/01` | | | __P3 DUE__<br>P4 INFO SESS | | L? |
+| `10/28 - 11/01` | | | __P3 DUE__ | | |
 | `11/04 - 11/08` | L | L | | | |
 | `11/11 - 11/15` | | __P4 DUE__<br>P5 INFO SESS | L | L | L |
 | `11/18 - 11/22` | L | L | __DROP DATE__ | | |
