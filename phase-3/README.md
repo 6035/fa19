@@ -19,6 +19,9 @@ By the end of code generation, you should have a fully working Decaf compiler. Y
         1. [Documentation](#documentation)
     1. [Reference](#reference)
     1. [Assembly Examples](#assembly-examples)
+        1. [Example 1](#example-1)
+        1. [Example 2](#example-2)
+        1. [Example 3](#example-3)
 
 ## Setup
 
@@ -134,88 +137,187 @@ Your documentation must include the following parts, which could be described as
 
 ## Assembly Examples
 
-1. print `32` using the `printf` function in the standard C library
-    ```s
-    format_str_0:
-        .string "%d\n"  # string constant
-        .align 16
 
-    .globl main
-    main:
-        # pre-call ritual
-        pushq %rbp         # save base pointer
-        movq  %rsp, %rbp   # save stack pointer
+### Example 1
 
-        # call function `printf`
-        leaq format_str_0(%rip), %rdi  # 1st arg; load the address of str constant into %rdi
-        movq $32, %rsi                 # 2nd arg; load int constant into %rsi
-        call printf                    # call with the above args
+> print `32` using the `printf` function in the standard C library
 
-        # analogous to 'return 0;' in C's main
-        mov $0, %rax
+```s
+format_str_0:
+    .string "%d\n"  # string constant
+    .align 16
 
-        # post-call ritual
-        movq %rbp, %rsp
-        popq %rbp
-        ret  # return to where the function was called
-    ```
-1. a function `calc(a, b, c, d, e)` which returns `(a*b - c/d)*e` where `c/d` discards remainders; for example `3/2 = 1`
-    ```s
-    format_str_0:
-        .string "%d\n"  # string constant
-        .align 16
+.globl main
+main:
+    # pre-call ritual
+    pushq %rbp         # save base pointer
+    movq  %rsp, %rbp   # save stack pointer
+
+    # call function `printf`
+    leaq format_str_0(%rip), %rdi  # 1st arg; load the address of str constant into %rdi
+    movq $32, %rsi                 # 2nd arg; load int constant into %rsi
+    call printf                    # call with the above args
+
+    # analogous to 'return 0;' in C's main
+    mov $0, %rax
+
+    # post-call ritual
+    movq %rbp, %rsp
+    popq %rbp
+    ret  # return to where the function was called
+```
+
+### Example 2
+
+> a function `calc(a, b, c, d, e)` which returns `(a*b - c/d)*e` where `c/d` discards remainders; for example `3/2 = 1`
+
+```s
+format_str_0:
+    .string "%d\n"  # string constant
+    .align 16
+
+calc:
+    # pre-call ritual
+    pushq %rbp
+    movq  %rsp, %rbp
+
+    # %rsi = %rdi * %rsi; calculate a * b
+    imul %rdi, %rsi
+
+    # %rax = %rdx / %rcx; calculate c / d
+    movq %rdx, %rax  # move %rdx into %rax
+    xor  %rdx, %rdx  # zero-out %rdx by xor'ing it with itself
+    idiv %rcx        # %rax = %rdx:%rax / %rcx = %rax / %rcx since %rdx = 0
+
+    # %rsi = %rsi - %rax; calculate a*b - c/d
+    subq %rax, %rsi
+
+    # %rsi = %rsi * %r8; calculate (a*b - c/d) * e
+    imul %r8, %rsi
     
-    calc:
-        # pre-call ritual
-        pushq %rbp
-        movq  %rsp, %rbp
+    # move the final value into %rax to return it
+    movq %rsi, %rax
 
-        # %rsi = %rdi * %rsi; calculate a * b
-        imul %rdi, %rsi
+    # post-call ritual
+    movq %rbp, %rsp
+    popq %rbp
+    ret
 
-        # %rax = %rdx / %rcx; calculate c / d
-        movq %rdx, %rax  # move %rdx into %rax
-        xor  %rdx, %rdx  # zero-out %rdx by xor'ing it with itself
-        idiv %rcx        # %rax = %rdx:%rax / %rcx = %rax / %rcx since %rdx = 0
+.globl main 
+main:
+    # pre-call ritual
+    pushq %rbp         # save base pointer
+    movq  %rsp, %rbp   # save stack pointer
 
-        # %rsi = %rsi - %rax; calculate a*b - c/d
-        subq %rax, %rsi
+    # calculate (4*5 - 3/2)*1
+    movq $4, %rdi  # 1st arg; a=4
+    movq $5, %rsi  # 2nd arg; b=5
+    movq $3, %rdx  # 3rd arg; c=3
+    movq $2, %rcx  # 4th arg; d=2
+    movq $1, %r8   # 5th arg; e=1
+    call calc # retval = 19 is now in %rax
 
-        # %rsi = %rsi * %r8; calculate (a*b - c/d) * e
-        imul %r8, %rsi
-        
-        # move the final value into %rax to return it
-        movq %rsi, %rax
+    # call function `printf`
+    leaq format_str_0(%rip), %rdi  # 1st arg; load the address of str constant into %rdi
+    movq %rax, %rsi                # 2nd arg; load result of calc into %rsi
+    call printf                    # call with the above args
 
-        # post-call ritual
-        movq %rbp, %rsp
-        popq %rbp
-        ret
+    # analogous to 'return 0;' in C's main
+    mov $0, %rax
 
-    .globl main 
-    main:
-        # pre-call ritual
-        pushq %rbp         # save base pointer
-        movq  %rsp, %rbp   # save stack pointer
+    # post-call ritual
+    movq %rbp, %rsp
+    popq %rbp
+    ret  # return to where the function was called
+```
+### Example 3 
 
-        # calculate (4*5 - 3/2)*1
-        movq $4, %rdi  # 1st arg; a=4
-        movq $5, %rsi  # 2nd arg; b=5
-        movq $3, %rdx  # 3rd arg; c=3
-        movq $2, %rcx  # 4th arg; d=2
-        movq $1, %r8   # 5th arg; e=1
-        call calc # retval = 19 is now in %rax
+> translate the following decaf code
 
-        # call function `printf`
-        leaq format_str_0(%rip), %rdi  # 1st arg; load the address of str constant into %rdi
-        movq %rax, %rsi                # 2nd arg; load result of calc into %rsi
-        call printf                    # call with the above args
+```cpp
+import printf;
 
-        # analogous to 'return 0;' in C's main
-        mov $0, %rax
+int a[10]; // global array
 
-        # post-call ritual
-        movq %rbp, %rsp
-        popq %rbp
-        ret  # return to where the function was called
-    ```
+void main ( ) {
+  int i;
+  for (i = 0; i < len(a); i++) {
+      printf("%d\n", a[i]);
+  }
+}
+```
+
+```s
+.data
+var0:
+    .string  "%d\n"
+    .align 16
+
+    .comm _a, 88, 16
+    .align 16
+
+.text
+.globl main
+main:
+    pushq %rbp
+    movq %rsp, %rbp
+    subq $16, %rsp
+
+    movq $0, -8(%rbp)  # i = 0
+
+    movq $10, _a      # length
+    movq $0, _a + 8
+    movq $0, _a + 16
+    movq $0, _a + 24
+    movq $0, _a + 32
+    movq $0, _a + 40
+    movq $0, _a + 48
+    movq $0, _a + 56
+    movq $0, _a + 64
+    movq $0, _a + 72
+    movq $0, _a + 80
+
+cond_start:
+    movq -8(%rbp), %rdi  # %rdi = i
+    movq _a, %rsi        # %rsi = _a = length
+
+stop:
+    cmp %rsi, %rdi  # weird syntax
+    jge loop_done   # if %rdi >= %rsi = i >= len, exit loop
+
+loop_start:
+    # save registers
+    push %rdi
+    push %rsi
+    push %rdx
+    push %rcx
+    push %r8
+    push %r9
+    push %r10
+    push %r11
+
+    addq $1, %rdi          # add 1 to compensate for the first element being length
+    imul $8, %rdi          # convert to bytes
+    movq _a(%rdi), %rsi    # address of _a + value in %rdi = _a + %rdi = _a + i * 8 = _a[i]
+    leaq var0(%rip), %rdi  # pointer to string
+    call printf
+
+    # restore registers
+    popq %r11
+    popq %r10
+    popq %r9
+    popq %r8
+    popq %rcx
+    popq %rdx
+    popq %rsi
+    popq %rdi
+
+    addq $1, -8(%rbp)  # i++
+    jmp cond_start
+
+loop_done:
+    mov $0, %rax
+    movq %rbp, %rsp
+    popq %rbp
+    ret
+```
