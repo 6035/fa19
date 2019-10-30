@@ -249,11 +249,11 @@ void main ( ) {
 
 ```s
 .data
-var0:
+format_str_0:
     .string  "%d\n"
     .align 16
 
-    .comm _a, 88, 16
+    .comm array_0, 88, 16
     .align 16
 
 .text
@@ -265,21 +265,21 @@ main:
 
     movq $0, -8(%rbp)  # i = 0
 
-    movq $10, _a      # length
-    movq  $0, _a + 8
-    movq  $0, _a + 16
-    movq  $0, _a + 24
-    movq  $0, _a + 32
-    movq  $0, _a + 40
-    movq  $0, _a + 48
-    movq  $0, _a + 56
-    movq  $0, _a + 64
-    movq  $0, _a + 72
-    movq  $0, _a + 80
+    movq $10, array_0       # length
+    movq  $0, array_0 + 8
+    movq  $0, array_0 + 16
+    movq  $0, array_0 + 24
+    movq  $0, array_0 + 32
+    movq  $0, array_0 + 40
+    movq  $0, array_0 + 48
+    movq  $0, array_0 + 56
+    movq  $0, array_0 + 64
+    movq  $0, array_0 + 72
+    movq  $0, array_0 + 80
 
 cond_start:
     movq -8(%rbp), %rdi  # %rdi = i
-    movq _a,       %rsi        # %rsi = _a = length
+    movq array_0,  %rsi  # %rsi = array_0 = length
 
 stop:
     cmp %rsi, %rdi  # weird syntax
@@ -296,10 +296,10 @@ loop_start:
     push %r10
     push %r11
 
-    addq $1, %rdi          # add 1 to compensate for the first element being length
-    imul $8, %rdi          # convert to bytes
-    movq   _a(%rdi), %rsi  # address of _a + value in %rdi = _a + %rdi = _a + i * 8 = _a[i]
-    leaq var0(%rip), %rdi  # pointer to string
+    addq $1, %rdi                  # add 1 to compensate for the first element being length
+    imul $8, %rdi                  # convert to bytes
+    movq      array_0(%rdi), %rsi  # address of array_0 + value in %rdi = array_0 + %rdi = array_0 + i * 8 = array_0[i]
+    leaq format_str_0(%rip), %rdi  # pointer to string
     call printf
 
     # restore registers
