@@ -60,7 +60,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 | `10/14 - 10/18` | Columbus Day | Columbus Day | [L: opt~59][lec08] | [L: dataflow~16][lec09] | |
 | `10/21 - 10/25` | [L: dataflow~$][lec09] | | | | Family Weekend |
 | `10/28 - 11/01` | | | __P3 DUE__ | | |
-| `11/04 - 11/08` | [L: dataflow~22][lec09] | [L: dataflow~$][lec09] | L | L | L |
+| `11/04 - 11/08` | [L: dataflow~22][lec09] | [L: dataflow~$][lec09] | [L: loops~][lec10] | L | L |
 | `11/11 - 11/15` | | __P4 DUE__<br>P5 INFO SESS | L | L | L |
 | `11/18 - 11/22` | L | L | __DROP DATE__ | | |
 | `11/25 - 11/29` | | | | Thanksgiving | Thanksgiving |
@@ -77,6 +77,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 [lec07]: materials/lecture/lec07-unoptimized-codegen.pdf
 [lec08]: materials/lecture/lec08-program-analysis.pdf
 [lec09]: materials/lecture/lec09-program-analysis-2.pdf
+[lec10]: materials/lecture/lec10-loop-optimization.pdf
 
 <!--- others --->
 [piazza]: https://piazza.com/mit/fall2019/6035
