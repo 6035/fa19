@@ -12,6 +12,7 @@ Optimizations!
     1. [Parallelization](#parallelization)
     1. [Compiler Submission](#compiler-submission)
     1. [Testing](#testing)
+    1. [References](#references)
     1. [What to Hand In](#what-to-hand-in)
 
 ## Important Dates
@@ -75,6 +76,10 @@ As before, your generated code must perform the runtime checks listed in the lan
 We have provided sample programs that perform image processing and filtering. All test programs and data are `tests/optimizer/`. These programs must be linked against the library provided in `lib/` directory. You should make sure that any valid program provided during previous phases continues to run correctly.
 
 We have provided you with 3 scripts for testing: `dcf-to-asm.sh`, `asm-to-bin.sh` and `test.sh`. Read the documentations at the top of each script to see how to use them.
+
+## References
+
+1. [Linear Scan Register Allocation](https://dl.acm.org/citation.cfm?id=330250)
 
 ## What to Hand In
 
