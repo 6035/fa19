@@ -61,7 +61,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 | `10/21 - 10/25` | [L: dataflow~$][lec09] | | | | Family Weekend |
 | `10/28 - 11/01` | | | __P3 DUE__ | | |
 | `11/04 - 11/08` | [L: dataflow~22][lec09] | [L: dataflow~$][lec09] | [L: loops~18][lec10] | [L: loops~$][lec10] | [L: reg~74][lec11] |
-| `11/11 - 11/15` | | __P4 DUE__<br>[L: lattice~12][lec12] | [L: lattice~49][lec12] | L | L |
+| `11/11 - 11/15` | | __P4 DUE__<br>[L: lattice~27][lec12] | [L: lattice~49][lec12] | L | L |
 | `11/18 - 11/22` | L | L | __DROP DATE__ | | |
 | `11/25 - 11/29` | | | | Thanksgiving | Thanksgiving |
 | `12/02 - 12/06` | | __QUIZ 2__ | | __CHECKPOINT__ | |
