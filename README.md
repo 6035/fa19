@@ -61,8 +61,8 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 | `10/21 - 10/25` | [L: dataflow~$][lec09] | | | | Family Weekend |
 | `10/28 - 11/01` | | | __P3 DUE__ | | |
 | `11/04 - 11/08` | [L: dataflow~22][lec09] | [L: dataflow~$][lec09] | [L: loops~18][lec10] | [L: loops~$][lec10] | [L: reg~74][lec11] |
-| `11/11 - 11/15` | | __P4 DUE__<br>[L: lattice~27][lec12] | [L: lattice~49][lec12] | L | L |
-| `11/18 - 11/22` | L | L | __DROP DATE__ | | |
+| `11/11 - 11/15` | | __P4 DUE__<br>[L: lattice~27][lec12] | [L: lattice~49][lec12] | [L: lattice~$][lec12] | [L: lattice~$][lec12] |
+| `11/18 - 11/22` | [L: lattice~$][lec12] | [L: parallel~47][lec13] | __DROP DATE__<br>L | | |
 | `11/25 - 11/29` | | | | Thanksgiving | Thanksgiving |
 | `12/02 - 12/06` | | __QUIZ 2__ | | __CHECKPOINT__ | |
 | `12/09 - 12/13` | | __P5 DUE__ | __LAST DAY__<br>__DERBY__ | | |
@@ -80,6 +80,7 @@ __Note: `L: parsing~55` means that the topic was `parsing` and we covered up to 
 [lec10]: materials/lecture/lec10-loop-optimization.pdf
 [lec11]: materials/lecture/lec11-register-allocation.pdf
 [lec12]: materials/lecture/lec12-foundations-of-dataflow.pdf
+[lec13]: materials/lecture/lec13-parallelization.pdf
 
 <!--- others --->
 [piazza]: https://piazza.com/mit/fall2019/6035
